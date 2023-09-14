@@ -8,7 +8,7 @@ namespace csharp_lista_indirizzi
 {
     internal class Address
     {
-        public string Name {  get; set; }
+        public string Name { get; set; }
         public string Surname { get; set; }
         public string Street { get; set; }
         public string City { get; set; }
@@ -23,6 +23,18 @@ namespace csharp_lista_indirizzi
             City = city;
             Province = province;
             Zip = zip;
+        }
+
+        public void GetAddress()
+        {
+            Console.WriteLine($@"
+ADDRESS INFO
+Owner: {Name} {Surname}
+Street: {Street}
+City: {City}
+Province: {Province}
+Zip: {Zip}
+");
         }
     }
 }
